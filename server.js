@@ -23,7 +23,7 @@ async function getBigQueryData() {
 }
 // getBigQueryData();
 
-app.get('/api/customers', cors(), async (req, res) => {
+app.get('/api/products', cors(), async (req, res) => {
  
   const data = await getBigQueryData();
   // console.log(data);
@@ -31,14 +31,14 @@ app.get('/api/customers', cors(), async (req, res) => {
   res.json(data);
 });
 
-// app.get('/api/customers', cors(), (req, res) => {
-//   const customers = [
+// app.get('/api/products', cors(), (req, res) => {
+//   const products = [
 //     {id: 1, firstName: 'John', lastName: 'Doe'},
 //     {id: 2, firstName: 'Brad', lastName: 'Traversy'},
 //     {id: 3, firstName: 'Mary', lastName: 'Swanson'},
 //   ];
 
-//   res.json(customers);
+//   res.json(products);
 // });
 
 const port = 5000;

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import logo from './logo.svg';
 import './App.css';
-import Customers from './components/customers';
+import Products from './components/products.js';
 
 class App extends Component {
   render() {
@@ -12,7 +12,7 @@ class App extends Component {
           <h1 className="App-title">Dashboard</h1>
           <h5 className="App-subtitle">Good morning <span role="img" aria-label="waving">👋</span></h5>
         </header>
-        <Customers />
+        <Products />
       </div>
     );
   }
