@@ -35,13 +35,11 @@ gcloud auth login
 ```
 Authenticating with a service account key file: https://cloud.google.com/bigquery/docs/authentication/service-account-file#node.js
 
-Quickstart: Using client libraries: https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries
-
 BigQuery API Client Libraries: https://cloud.google.com/bigquery/docs/reference/libraries
 ``` bash
 npm install --save @google-cloud/bigquery
 ```
-
+Quickstart: Using client libraries: https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries
 
 
 
