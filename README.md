@@ -31,7 +31,7 @@ Installing Cloud SDK: https://cloud.google.com/sdk/docs/install
 
 Authorizing Cloud SDK tools: https://cloud.google.com/sdk/docs/authorizing
 
-gcloud auth login
+# gcloud auth login
 
 Authenticating with a service account key file: https://cloud.google.com/bigquery/docs/authentication/service-account-file#node.js
 
@@ -39,7 +39,7 @@ Quickstart: Using client libraries: https://cloud.google.com/bigquery/docs/quick
 
 BigQuery API Client Libraries: https://cloud.google.com/bigquery/docs/reference/libraries
 
-npm install --save @google-cloud/bigquery
+# npm install --save @google-cloud/bigquery
 
 
 
