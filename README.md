@@ -1,10 +1,24 @@
-# React Express Starter Pack
 
-> Create full stack apps with React and Express. Run your client and server with a single command. 
+# Full stack challenge BigQuery 
 
-### Redux Version
-This version does not include Redux
-[Click Here For Redux Version](https://github.com/bradtraversy/react_redux_express_starter) 
+Dynamically created results table based on data from a Google Cloud Project, accessible by API. 
+
+Accessed Bigquery table called ‘demo_data.pricing’ in the ‘full-stack-challenge-323806’ project. 
+
+When we add new rows to the bigquery table, they should show up (after refresh) in the UI table.
+
+
+#### Tools used: 
+
+● Frontend framework: React
+
+● Bigquery API
+
+● Bigquery Node.js SDK
+
+
+#### React Express Starter Pack
+For the react-express project I used a boilerplate: https://github.com/bradtraversy/react_express_starter
 
 ## Quick Start
 
@@ -27,17 +41,24 @@ npm run client
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
 
-## App Info
+## Google Cloud documentation: 
 
-### Author
+Installing Cloud SDK: https://cloud.google.com/sdk/docs/install
 
-Brad Traversy
-[Traversy Media](http://www.traversymedia.com)
+Authorizing Cloud SDK tools: https://cloud.google.com/sdk/docs/authorizing
+``` bash
+gcloud auth login
+```
+Authenticating with a service account key file: https://cloud.google.com/bigquery/docs/authentication/service-account-file#node.js
 
-### Version
+BigQuery API Client Libraries: https://cloud.google.com/bigquery/docs/reference/libraries
+``` bash
+npm install --save @google-cloud/bigquery
+```
+Quickstart: Using client libraries: https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries
 
-1.0.0
 
-### License
 
-This project is licensed under the MIT License
+
+
+
