@@ -8,7 +8,7 @@ Accessed Bigquery table called ‘demo_data.pricing’ in the ‘full-stack-chal
 When we add new rows to the bigquery table, they should show up (after refresh) in the UI table.
 
 
-Tools used: 
+####Tools used: 
 
 ● Frontend framework: React
 
