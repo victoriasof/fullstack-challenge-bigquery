@@ -61,11 +61,11 @@ class Customers extends Component {
                 <td>{customer.rotation}</td>
                 <td>{customer.lifetime}</td>
                 <td>{customer.estimated_overstock}</td>
-                <td>{customer.value_at_risk}</td>
-                <td>{customer.current_price}</td>
-                <td>{customer.optimal_markdown}</td>
-                <td>{customer.attainable_increase_turnover}</td>
-                <td>{customer.attainable_increase_markdown}</td>
+                <td>€ {customer.value_at_risk}</td>
+                <td>€ {customer.current_price}</td>
+                <td>Optimal {customer.optimal_markdown*100}%</td>
+                <td id="attainable-increase">€ {customer.attainable_increase_turnover}</td>
+                <td id="attainable-increase">€ {customer.attainable_increase_markdown}</td>
         
               </tr>
              )}
