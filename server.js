@@ -3,12 +3,16 @@ const cors = require('cors');
 
 const app = express();
 
+//https://cloud.google.com/bigquery/docs/authentication/service-account-file#node.js
+
 const {BigQuery} = require('@google-cloud/bigquery');
 
 const options = {
-  keyFilename: 'bigQuery.json',
+  keyFilename: 'full-stack-challenge-323806-425e8a7f27b9.json',
   projectId: 'full-stack-challenge-323806',
 };
+
+//https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries
 
 const bigquery = new BigQuery(options);
 
@@ -23,6 +27,7 @@ async function getBigQueryData() {
 }
 // getBigQueryData();
 
+//got error "promise pending" ...added async, await: 
 app.get('/api/products', cors(), async (req, res) => {
  
   const data = await getBigQueryData();
@@ -30,16 +35,6 @@ app.get('/api/products', cors(), async (req, res) => {
 
   res.json(data);
 });
-
-// app.get('/api/products', cors(), (req, res) => {
-//   const products = [
-//     {id: 1, firstName: 'John', lastName: 'Doe'},
-//     {id: 2, firstName: 'Brad', lastName: 'Traversy'},
-//     {id: 3, firstName: 'Mary', lastName: 'Swanson'},
-//   ];
-
-//   res.json(products);
-// });
 
 const port = 5000;
 

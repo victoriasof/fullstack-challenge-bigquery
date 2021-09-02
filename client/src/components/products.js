@@ -25,13 +25,6 @@ class Products extends Component {
     return (
       <div>
 
-        {/* <h2>products</h2>
-        <ul>
-        {this.state.products.map(product => 
-          <li key={product.id}>{product.firstName} {product.lastName}</li>
-        )}
-        </ul> */}
-
         <table>
 
           <thead>
@@ -51,6 +44,9 @@ class Products extends Component {
           </thead>
 
           <tbody>
+
+            {/* was trying to map in empty array ...added condition:  */}
+
             {this.state.products[0] && this.state.products[0].map((product, i)=> 
 
               <tr key = {i}> 
