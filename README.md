@@ -1,5 +1,5 @@
 
-# Fullstack challenge BigQuery 
+# Full stack challenge BigQuery 
 
 I used a boilerplate for a react-express project. 
 Credit to: https://github.com/bradtraversy/react_express_starter
@@ -24,5 +24,27 @@ npm run client
 
 # Server runs on http://localhost:5000 and client on http://localhost:3000
 ```
+
+##Google cloud documentation: 
+
+#Installing Cloud SDK: https://cloud.google.com/sdk/docs/install
+
+#Authorizing Cloud SDK tools: https://cloud.google.com/sdk/docs/authorizing
+
+#gcloud auth login
+
+#Authenticating with a service account key file: https://cloud.google.com/bigquery/docs/authentication/service-account-file#node.js
+
+#Quickstart: Using client libraries: https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries
+
+#BigQuery API Client Libraries: https://cloud.google.com/bigquery/docs/reference/libraries
+
+#npm install --save @google-cloud/bigquery
+
+
+
+
+
+
 
 
