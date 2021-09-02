@@ -38,8 +38,12 @@ class Products extends Component {
               <th>Value at risk</th>
               <th>Current price</th>
               <th>Markdown</th>
-              <th>Attainable increase<br/>TURNOVER</th>
-              <th>Attainable increase<br/>MARGIN</th>
+        
+              <th colSpan="2">Attainable increase
+                  <th> TURNOVER</th>
+                  <th> MARGIN</th>
+              </th>
+                   
             </tr>
           </thead>
 
@@ -62,13 +66,13 @@ class Products extends Component {
 
                 <td id="markdown">
                   <div>
-                    <input type="radio" value="Current" name="markdown"/> Current
+                    <input type="radio" value="current" /> Current
                   </div>
                   <div>
-                    <input type="radio" value="Optimal" name="markdown"/> Optimal {product.optimal_markdown*100}%
+                    <input type="radio" value="optimal" checked="checked"/> Optimal {product.optimal_markdown*100}%
                   </div>
                   <div>
-                    <input type="radio" value="Custom" name="markdown"/> Custom  
+                    <input type="radio" value="custom"  /> Custom  
                     <input type="text" name="percent" /> %
                   </div> 
                 </td>
