@@ -19,7 +19,7 @@ Tools used:
 
 For the react-express project I used a boilerplate: https://github.com/bradtraversy/react_express_starter
 
-#React Express Starter Pack
+# React Express Starter Pack
 
 Create full stack apps with React and Express. Run your client and server with a single command.
 
