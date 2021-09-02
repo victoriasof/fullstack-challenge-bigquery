@@ -1,4 +1,4 @@
-ul {
+/* ul {
   padding:0;
   list-style:none;
   width: 30%;
@@ -9,4 +9,41 @@ li{
   font-size:1.2rem;
   line-height: 2rem;
   border-bottom: 1px dotted #777;
+} */
+
+
+*{
+  background-color: #f3f3f3;
 }
+
+table{
+  margin-left: 20px;
+  border-collapse: collapse; 
+}
+
+
+tr{
+  border: 1px solid #f3f3f3;
+ 
+  padding: 8px;
+
+}
+
+th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  background-color:white;
+}
+
+td{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 12px;
+  padding-right: 12px;
+  text-align: center;
+  background-color:white;
+}
+
