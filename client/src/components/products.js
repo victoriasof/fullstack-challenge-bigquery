@@ -45,8 +45,8 @@ class Products extends Component {
               <th>Value at risk</th>
               <th>Current price</th>
               <th>Markdown</th>
-              <th>Attainable increase TURNOVER</th>
-              <th>Attainable increase MARGIN</th>
+              <th>Attainable increase<br/>TURNOVER</th>
+              <th>Attainable increase<br/>MARGIN</th>
             </tr>
           </thead>
 
@@ -73,7 +73,7 @@ class Products extends Component {
                   </div>
                   <div>
                     <input type="radio" value="Custom" name="markdown"/> Custom  
-                    <input type="text" name="percent" className="form-inline" />
+                    <input type="text" name="percent" /> %
                   </div> 
                 </td>
 
