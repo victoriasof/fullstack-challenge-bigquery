@@ -10,7 +10,7 @@ class App extends Component {
         <header className="App-header">
           {/* <img src={logo} className="App-logo" alt="logo" /> */}
           <h1 className="App-title">Dashboard</h1>
-          <h5 className="App-subtitle">Good morning</h5>
+          <h5 className="App-subtitle">Good morning <span role="img" aria-label="waving">👋</span></h5>
         </header>
         <Customers />
       </div>
