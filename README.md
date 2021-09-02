@@ -8,7 +8,7 @@ Accessed Bigquery table called ‘demo_data.pricing’ in the ‘full-stack-chal
 When we add new rows to the bigquery table, they should show up (after refresh) in the UI table.
 
 
-####Tools used: 
+#### Tools used: 
 
 ● Frontend framework: React
 
@@ -17,11 +17,8 @@ When we add new rows to the bigquery table, they should show up (after refresh) 
 ● Bigquery Node.js SDK
 
 
-For the react-express project I used a boilerplate: https://github.com/bradtraversy/react_express_starter
-
 #### React Express Starter Pack
-
-Create full stack apps with React and Express. Run your client and server with a single command.
+For the react-express project I used a boilerplate: https://github.com/bradtraversy/react_express_starter
 
 ## Quick Start
 
