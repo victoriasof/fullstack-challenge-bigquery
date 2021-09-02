@@ -34,8 +34,23 @@ class Customers extends Component {
 
         <table>
 
-          <tbody>
+          <thead>
+            <tr>
+              <th>Prod.code</th>
+              <th>Category</th>
+              <th>Inventory</th>
+              <th>Rotation</th>
+              <th>Lifetime</th>
+              <th>Est.overstock</th>
+              <th>Value at risk</th>
+              <th>Current price</th>
+              <th>Markdown</th>
+              <th>Attainable increase TURNOVER</th>
+              <th>Attainable increase MARGIN</th>
+            </tr>
+          </thead>
 
+          <tbody>
             {this.state.customers[0] && this.state.customers[0].map((customer, i)=> 
 
               <tr key = {i}> 
