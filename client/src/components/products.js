@@ -63,7 +63,20 @@ class Products extends Component {
                 <td>{product.estimated_overstock}</td>
                 <td>€ {product.value_at_risk.toLocaleString('en-US')}</td>
                 <td>€ {product.current_price}</td>
-                <td>Optimal {product.optimal_markdown*100}%</td>
+
+                <td id="markdown">
+                  <div>
+                    <input type="radio" value="Current" name="markdown"/> Current
+                  </div>
+                  <div>
+                    <input type="radio" value="Optimal" name="markdown"/> Optimal {product.optimal_markdown*100}%
+                  </div>
+                  <div>
+                    <input type="radio" value="Custom" name="markdown"/> Custom  
+                    <input type="text" name="percent" className="form-inline" />
+                  </div> 
+                </td>
+
                 <td id="attainable-increase">€ {product.attainable_increase_turnover.toLocaleString('en-US')}</td>
                 <td id="attainable-increase">€ {product.attainable_increase_markdown.toLocaleString('en-US')}</td>
         
