@@ -3,9 +3,10 @@
 
 Dynamically created results table based on data from a Google Cloud Project, accessible by API. 
 
-Accessed Bigquery table called ‘demo_data.pricing’ in the ‘full-stack-challenge-323806’ project.
+Accessed Bigquery table called ‘demo_data.pricing’ in the ‘full-stack-challenge-323806’ project. 
 
 When we add new rows to the bigquery table, they should show up (after refresh) in the UI table.
+
 
 Tools used: 
 
@@ -15,7 +16,9 @@ Tools used:
 
 ● Bigquery Node.js SDK
 
+
 For the react-express project I used a boilerplate: https://github.com/bradtraversy/react_express_starter
+
 
 ## Quick Start
 
