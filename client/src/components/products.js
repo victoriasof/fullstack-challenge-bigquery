@@ -39,6 +39,7 @@ class Products extends Component {
               <th>Current price</th>
               <th>Markdown</th>
         
+              {/* Warning: validateDOMNesting(...): <th> cannot appear as a child of <th> */}
               <th colSpan="2">Attainable increase
                   <th> TURNOVER</th>
                   <th> MARGIN</th>
@@ -65,10 +66,13 @@ class Products extends Component {
                 <td>€ {product.current_price}</td>
 
                 <td >
+                  {/* [DOM] Found 12 elements with non-unique id #markdown */}
                   <div id="markdown">
                     <input type="radio" value="current" /> Current
                   </div>
                   <div id="markdown">
+                    {/* Warning: Failed prop type: You provided a checked prop to a form field without an onChange handler. This will render a read-only field. 
+                    If the field should be mutable use defaultChecked. Otherwise, set either onChange or readOnly. */}
                     <input type="radio" value="optimal" defaultChecked/> Optimal {product.optimal_markdown*100}%
                   </div>
                   <div id="markdown"> 
