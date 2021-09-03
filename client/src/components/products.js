@@ -65,15 +65,15 @@ class Products extends Component {
                 <td>€ {product.current_price}</td>
 
                 <td id="markdown">
-                  <div>
+                  <div id="markdown">
                     <input type="radio" value="current" /> Current
                   </div>
-                  <div>
+                  <div id="markdown">
                     <input type="radio" value="optimal" checked="checked"/> Optimal {product.optimal_markdown*100}%
                   </div>
-                  <div>
+                  <div id="markdown">
                     <input type="radio" value="custom"  /> Custom  
-                    <input type="text" name="percent" /> %
+                    <input type="text" id="markdown" name="percent" /> %
                   </div> 
                 </td>
 
