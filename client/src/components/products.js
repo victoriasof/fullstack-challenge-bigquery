@@ -69,7 +69,7 @@ class Products extends Component {
                     <input type="radio" value="current" /> Current
                   </div>
                   <div id="markdown">
-                    <input type="radio" value="optimal" checked="checked"/> Optimal {product.optimal_markdown*100}%
+                    <input type="radio" value="optimal" defaultChecked/> Optimal {product.optimal_markdown*100}%
                   </div>
                   <div id="markdown"> 
                     <input type="radio" value="custom"  /> Custom  
