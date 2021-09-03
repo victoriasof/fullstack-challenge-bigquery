@@ -66,7 +66,8 @@ class Products extends Component {
                 <td>€ {product.current_price}</td>
 
                 <td >
-                  {/* [DOM] Found 12 elements with non-unique id #markdown */}
+                  {/* [DOM] Found 12 elements with non-unique id #markdown.
+                  I used the id for styling in products.css*/}
                   <div id="markdown">
                     <input type="radio" value="current" /> Current
                   </div>
