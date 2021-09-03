@@ -24,7 +24,7 @@ class Products extends Component {
   //https://www.codegrepper.com/code-examples/javascript/event+handler+in+react+radio+button
   //https://www.codegrepper.com/code-examples/javascript/uncheck+to+find+value++radio+button+with+same+name+in+react
 
-  handleChange = e => {
+  handleChange = (e) => {
     const { name, value } = e.target;
 
     this.setState({[name]: value});
