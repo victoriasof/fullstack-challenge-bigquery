@@ -20,7 +20,7 @@ class Products extends Component {
   }
 
   render() {
-    console.log(this.state.products);
+    //console.log(this.state.products);
 
     return (
       <div>
@@ -64,12 +64,12 @@ class Products extends Component {
                 <td>€ {product.value_at_risk.toLocaleString('en-US')}</td>
                 <td>€ {product.current_price}</td>
 
-                <td id="markdown">
+                <td >
                   <div id="markdown">
                     <input type="radio" value="current" /> Current
                   </div>
                   <div id="markdown">
-                    <input type="radio" value="optimal" checked="{{ isChecked }}"/> Optimal {product.optimal_markdown*100}%
+                    <input type="radio" value="optimal" checked="checked"/> Optimal {product.optimal_markdown*100}%
                   </div>
                   <div id="markdown"> 
                     <input type="radio" value="custom"  /> Custom  
