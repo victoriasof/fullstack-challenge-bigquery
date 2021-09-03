@@ -83,13 +83,13 @@ class Products extends Component {
                   <div id="markdown">
                     {/* Warning: Failed prop type: You provided a checked prop to a form field without an onChange handler. This will render a read-only field. 
                     If the field should be mutable use defaultChecked. Otherwise, set either onChange or readOnly. */}
-                    <input type="radio" value="optimal" name="markdown" defaultChecked onChange={this.handleChange} /> Optimal {product.optimal_markdown*100}%
+                    {/* https://stackoverflow.com/questions/36715901/reactjs-error-warning/36716016 */}
+                    <input type="radio" value="optimal" defaultChecked onChange={this.handleChange} /> Optimal {product.optimal_markdown*100}%
                   </div>
                   <div id="markdown"> 
                     <input type="radio" value="custom" name="markdown" onChange={this.handleChange} /> Custom  
                     <input type="text" id="markdown" name="percent" /> %
-                    {/* [DOM] Found 12 elements with non-unique id #markdown.
-                    I used the id for styling in products.css*/}
+                    {/* [DOM] Found 12 elements with non-unique id #markdown. (I used the id for styling in products.css) */}
                   </div> 
                 </td>
 
