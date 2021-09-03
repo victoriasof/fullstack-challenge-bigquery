@@ -18,7 +18,7 @@ When we add new rows to the bigquery table, they should show up (after refresh) 
 
 
 #### React Express Starter Pack
-For the react-express project I used a boilerplate: https://github.com/bradtraversy/react_express_starter
+For the react-express project I started with a boilerplate: https://github.com/bradtraversy/react_express_starter
 
 ## Quick Start
 
