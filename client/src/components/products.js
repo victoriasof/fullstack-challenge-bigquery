@@ -5,8 +5,8 @@ class Products extends Component {
   constructor() {
     super();
     this.state = {
-      products: []
-   
+      products: [],
+      markdown:'optimal'
     };
   }
 
@@ -18,16 +18,26 @@ class Products extends Component {
 
         this.setState({products}, () => console.log('products fetched...', products))
       });
+    
   }
 
   //examples for radio buttons: 
   //https://www.codegrepper.com/code-examples/javascript/event+handler+in+react+radio+button
   //https://www.codegrepper.com/code-examples/javascript/uncheck+to+find+value++radio+button+with+same+name+in+react
 
-  handleChange = (e) => {
-    const { name, value } = e.target;
-    this.setState({[name]: value});
-  };
+  // handleChange = (e) => {
+  //   const { name, value } = e.target;
+  //   this.setState({[name]: value});
+  // };
+
+//better example (still not perfect): 
+//https://www.positronx.io/react-radio-button-tutorial-with-example/
+
+  onRadioChange = (e) => {
+    this.setState({
+      markdown: e.target.value
+    });
+  }
 
   render() {
     //console.log(this.state.products);
@@ -75,18 +85,19 @@ class Products extends Component {
                 <td>€ {product.value_at_risk.toLocaleString('en-US')}</td>
                 <td>€ {product.current_price}</td>
 
-                <td >
-                  <div id="markdown">
-                    <input type="radio" value="current" name="markdown" onChange={this.handleChange} /> Current
+                <td> 
+                  <div id="markdown"> 
+                    <input type="radio" value="current" checked={this.state.markdown === "current"} onChange={this.onRadioChange} /> Current
+                    {/* removed name="markdown"  */}
                   </div>
-                  <div id="markdown">
+                  <div id="markdown"> 
                     {/* Warning: Failed prop type: You provided a checked prop to a form field without an onChange handler. This will render a read-only field. 
                     If the field should be mutable use defaultChecked. Otherwise, set either onChange or readOnly. */}
                     {/* https://stackoverflow.com/questions/36715901/reactjs-error-warning/36716016 */}
-                    <input type="radio" value="optimal" defaultChecked onChange={this.handleChange} /> Optimal {product.optimal_markdown*100}%
+                    <input type="radio" value="optimal" checked={this.state.markdown === "optimal"} onChange={this.onRadioChange}/> Optimal {product.optimal_markdown*100}%
                   </div>
                   <div id="markdown"> 
-                    <input type="radio" value="custom" name="markdown" onChange={this.handleChange} /> Custom  
+                    <input type="radio" value="custom" checked={this.state.markdown === "custom"} onChange={this.onRadioChange} /> Custom  
                     <input type="text" id="markdown" name="percent" /> %
                     {/* [DOM] Found 12 elements with non-unique id #markdown. (I used the id for styling in products.css) */}
                   </div> 
