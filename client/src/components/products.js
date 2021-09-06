@@ -25,6 +25,7 @@ class Products extends Component {
 //https://www.positronx.io/react-radio-button-tutorial-with-example/
 
   onRadioChange = (e) => {
+
     this.setState({
       markdown: e.target.value
     });
