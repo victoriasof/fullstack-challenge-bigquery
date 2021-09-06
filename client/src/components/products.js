@@ -21,16 +21,7 @@ class Products extends Component {
     
   }
 
-  //examples for radio buttons: 
-  //https://www.codegrepper.com/code-examples/javascript/event+handler+in+react+radio+button
-  //https://www.codegrepper.com/code-examples/javascript/uncheck+to+find+value++radio+button+with+same+name+in+react
-
-  // handleChange = (e) => {
-  //   const { name, value } = e.target;
-  //   this.setState({[name]: value});
-  // };
-
-//better example (still not perfect): 
+//example for radio buttons (still not perfect): 
 //https://www.positronx.io/react-radio-button-tutorial-with-example/
 
   onRadioChange = (e) => {
