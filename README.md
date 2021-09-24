@@ -58,7 +58,9 @@ npm install --save @google-cloud/bigquery
 Quickstart: Using client libraries: https://cloud.google.com/bigquery/docs/quickstarts/quickstart-client-libraries
 
 
+## Result:
 
+![bigQueryChallenge](https://user-images.githubusercontent.com/68014127/134635981-336855c4-a8b7-4df4-bfd1-f28988a5efe9.png)
 
 
 
